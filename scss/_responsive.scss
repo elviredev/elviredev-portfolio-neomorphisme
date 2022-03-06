@@ -1,0 +1,142 @@
+@media (max-width: 991px) {
+  .service-section .service-item,
+  .portfolio-section .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-section .home-img,
+  .home-section .home-text,
+  .about-section .about-img,
+  .about-section .about-info,
+  .about-section .skills .skill-item,
+  .portfolio-section .portfolio-item,
+  .contact-section .contact-item,
+  .contact-section .contact-form .w-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home-section {
+    & .home-img {
+      & .img-box {
+        margin-bottom: 40px;
+      }
+    }
+
+    & .home-text {
+      order: 2;
+      text-align: center;
+    }
+
+    & .full-screen {
+      padding: 100px 0;
+    }
+  }
+
+  .effect-wrapper {
+    & .effect {
+      &.effect-3 {
+        margin-left: -60px;
+      }
+
+      &.effect-4 {
+        left: 15%;
+      }
+
+      &.effect-5 {
+        right: 4%;
+      }
+    }
+  }
+
+  .about-section {
+    & .about-img {
+      padding-bottom: 30px;
+    }
+
+    & .timeline {
+      & .timeline-item:nth-child(odd) {
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+
+        & .icon {
+          right: auto;
+          left: -60px;
+        }
+
+        & .timeline-item-inner::before {
+          left: -30px;
+          right: auto;
+        }
+      }
+
+      & .timeline-item:nth-child(even) {
+        padding-left: 75px;
+
+        & .icon {
+          left: -60px;
+        }
+      }
+
+      &::before {
+        left: 35px;
+      }
+
+      & .timeline-item {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .service-section {
+    & .service-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .portfolio-popup {
+    & .pp-details-inner {
+      & .pp-project-details {
+        & .description {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        & .info {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .contact-section .contact-form .submit-btn {
+    text-align: center;
+  }
+}
+
+@media (max-width: 574px) {
+  .home-section {
+    & .home-img {
+      & .img-box {
+        max-width: 260px;
+      }
+    }
+
+    & .home-text {
+      & h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
